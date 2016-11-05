@@ -1,5 +1,6 @@
 #listings-button {
     text-align: center;
+    margin-top: 20px;
 }
 
 #listings-dropdown-menu {
@@ -7,4 +8,19 @@
     right: auto;
     text-align: center;
     transform: translate(-50%, 0);
+}
+
+#main-table {
+    width: 90%;
+    margin: 40px auto 0 auto;
+
+    th, td {
+        text-align: center;
+    }
+}
+
+@media (min-width : 1024px) {
+    #main-table {
+        table-layout: fixed;
+    }
 }
