@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+    head
+        title Bootstrap Case
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css', integrity='sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi', crossorigin='anonymous')
+        link(rel='stylesheet', href='contact.min.css')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js', integrity='sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK', crossorigin='anonymous')
+    body
+        nav.navbar.navbar-light.bg-faded(role='navigation')
+            .navbar-header
+                a.navbar-brand Contact Information
+            .nav.navbar-nav.float-lg-right
+                a.nav-item.nav-link(href='index.html') home
+                .nav-item.dropdown
+                    a.nav-link.dropdown-toggle(data-toggle="dropdown") city
+                    .dropdown-menu
+                        a.dropdown-item(href="eventlisting.html") Atlanta
+                        a.dropdown-item(href="eventlisting.html") Los Angeles
+                        a.dropdown-item(href="eventlisting.html") San Francisco
+                        a.dropdown-item(href="eventlisting.html") Texas
+                //- a.nav-item.nav-link(href='') elsewhere
+                //- a.nav-item.nav-link(href='') past events
+                //- a.nav-item.nav-link(href='') events archive
+                //- a.nav-item.nav-link(href='') venues list
+                //- a.nav-item.nav-link(href='') promoter list
+                a.nav-item.nav-link(href='contact.html') contact
+        #all-city-info.container
+            .row
+                h1 Atlanta
+                a(href='mailto:itisntspirals@gmail.com') e-mail
+                a(href='https://docs.google.com/spreadsheets/d/1yZfy_l-DIG0bZvA3FBJv9B0ZDOq5fcm9o_bLcz4ZpnU/edit#gid=222667174') google sheet
+            .row
+                h1 Los Angeles
+                a(href='mailto:franklinjen@gmail.com') e-mail
+                a(href='https://docs.google.com/spreadsheets/d/1Pf-kqSxJ24sh8RAxeEZWXdMz1Yo4Z16KwzsnHIf52Qw/edit#gid=0') google sheet
+            .row
+                h1 San Francisco
+                a(href='mailto:franklinjen@gmail.com') e-mail
+                a(href='https://docs.google.com/spreadsheets/d/10ZJxAcCG4NstxXN-z4BWuhJmWDo69spUe4dUeeobJa0/edit#gid=1') google sheet
+            .row
+                h1 Texas
+                a(href='mailto:franklinjen@gmail.com') e-mail
+                a(href='https://docs.google.com/spreadsheets/d/1Ten79C0LyQnqQ2DjKAjTrrC8iqoa7s0PY0mygjAAWTM/edit') google sheet

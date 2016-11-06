@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    title Bootstrap Case
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css', integrity='sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi', crossorigin='anonymous')
+    link(rel='stylesheet', href='index.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js', integrity='sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK', crossorigin='anonymous')
+  body
+    nav.navbar.navbar-light.bg-faded(role='navigation')
+      .navbar-header
+        a.navbar-brand 19hz
+        .nav.navbar-nav.float-lg-right
+          a.nav-item.nav-link(href='index.html') home
+          .nav-item.dropdown
+            a.nav-link.dropdown-toggle(data-toggle='dropdown') city
+            .dropdown-menu
+              a.dropdown-item(href='eventlisting.html') Atlanta
+              a.dropdown-item(href='eventlisting.html') Los Angeles
+              a.dropdown-item(href='eventlisting.html') San Francisco
+              a.dropdown-item(href='eventlisting.html') Texas
+          a.nav-item.nav-link(href='contact.html') contact
+    .cover
+      h1.coverHeader EDM Calendars
+      .btn-group-vertical
+        p.subHeader Choose A Region
+        a.btn.btn-primary.btn-lg(href='eventlisting.html', role='button') Atlanta
+        a.btn.btn-primary.btn-lg(href='eventlisting.html', role='button') Los Angelos
+        a.btn.btn-primary.btn-lg(href='eventlisting.html', role='button') San Francisco
+        a.btn.btn-primary.btn-lg(href='eventlisting.html', role='button') Texas
