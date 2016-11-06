@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="eventlisting.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
+    <script src="eventlisting.js"></script>
   </head>
   <body>
     <nav role="navigation" class="navbar navbar-light bg-faded">
@@ -24,7 +26,7 @@
       <div id="listings-dropdown-menu" aria-labelledby="dropdownMenuButton" class="dropdown-menu"><a href="" class="dropdown-item">Normal Events</a><a href="" class="dropdown-item">Recurring Events</a><a href="" class="dropdown-item">Past Events    </a><a href="" class="dropdown-item">Events Archive</a><a href="" class="dropdown-item">Venues List</a><a href="" class="dropdown-item">Promoter List </a></div>
     </div>
     <div class="table-responsive">
-      <table id="main-table" class="table table-striped">
+      <table id="main-table" class="table table-striped table-bordered">
         <thead>
           <tr>
             <th>Date/Time</th>
